@@ -15,10 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="gameoverstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gamepausestate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gameplaystate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainmenustate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainmenutextbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screentextbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="snake.cpp">
@@ -30,6 +48,27 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameoverstate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gamepausestate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameplaystate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gamestate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainmenustate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainmenutextbox.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screentextbox.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="snake.h">

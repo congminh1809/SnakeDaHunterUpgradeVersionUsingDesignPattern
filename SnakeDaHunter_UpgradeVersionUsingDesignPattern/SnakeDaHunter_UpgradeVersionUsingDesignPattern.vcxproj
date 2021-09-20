@@ -20,12 +20,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="gameoverstate.cpp" />
+    <ClCompile Include="gamepausestate.cpp" />
+    <ClCompile Include="gameplaystate.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainmenustate.cpp" />
+    <ClCompile Include="mainmenutextbox.cpp" />
+    <ClCompile Include="screentextbox.cpp" />
     <ClCompile Include="snake.cpp" />
     <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h" />
+    <ClInclude Include="gameoverstate.h" />
+    <ClInclude Include="gamepausestate.h" />
+    <ClInclude Include="gameplaystate.h" />
+    <ClInclude Include="gamestate.h" />
+    <ClInclude Include="mainmenustate.h" />
+    <ClInclude Include="mainmenutextbox.h" />
+    <ClInclude Include="screentextbox.h" />
     <ClInclude Include="snake.h" />
     <ClInclude Include="world.h" />
   </ItemGroup>

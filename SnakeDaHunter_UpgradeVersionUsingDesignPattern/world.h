@@ -11,20 +11,17 @@ public:
 
   void draw(sf::RenderWindow&);
   void update();
-  int score();
+  int numberOfApplesCreated() const { return nApplesCreated_; }
 
 private:
   int segmentSize_;
-  long int score_ = 0;
   sf::Vector2i worldSize_;
   Snake& snake_;
   struct Apple
   {
     sf::Vector2i position;
-    sf::Sprite shape;
+    sf::CircleShape shape;
   } apple_;
-  sf::Texture texture_;
-  
   sf::RectangleShape walls_[4];
   int nApplesCreated_;  // hold the number of apples created so far
 
