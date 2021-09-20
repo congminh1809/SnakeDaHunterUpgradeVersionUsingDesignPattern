@@ -27,6 +27,24 @@
     <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\world.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gameoverstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gamepausestate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gameplaystate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\mainmenustate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\mainmenutextbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\screentextbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\game.h">
@@ -36,6 +54,27 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\world.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gameoverstate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gamepausestate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gameplaystate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gamestate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\mainmenustate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\mainmenutextbox.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\screentextbox.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

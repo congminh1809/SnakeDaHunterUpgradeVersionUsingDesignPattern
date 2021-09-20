@@ -146,12 +146,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\game.cpp" />
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gameoverstate.cpp" />
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gamepausestate.cpp" />
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gameplaystate.cpp" />
     <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\main.cpp" />
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\mainmenustate.cpp" />
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\mainmenutextbox.cpp" />
+    <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\screentextbox.cpp" />
     <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\snake.cpp" />
     <ClCompile Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\world.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\game.h" />
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gameoverstate.h" />
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gamepausestate.h" />
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gameplaystate.h" />
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\gamestate.h" />
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\mainmenustate.h" />
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\mainmenutextbox.h" />
+    <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\screentextbox.h" />
     <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\snake.h" />
     <ClInclude Include="SnakeDaHunter_UpgradeVersionUsingDesignPattern Source Code\world.h" />
   </ItemGroup>
