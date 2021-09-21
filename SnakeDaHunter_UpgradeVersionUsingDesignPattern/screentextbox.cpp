@@ -19,7 +19,7 @@ ScreenTextBox::ScreenTextBox(sf::RenderWindow& window,
 
 void ScreenTextBox::initializeBackdrop()
 {
-  backdrop_.setFillColor(sf::Color{ 0, 0, 255, 120 });
+  backdrop_.setFillColor(sf::Color{ 0, 0, 255, 0 });
   backdrop_.setOutlineColor(sf::Color::Blue);
   backdrop_.setSize(sf::Vector2f{ window_.getSize() });
   backdrop_.setPosition(0, 0);

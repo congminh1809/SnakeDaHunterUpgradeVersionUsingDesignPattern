@@ -5,7 +5,7 @@
 #include <sstream>
 
 const int SNAKE_LIVES{ 3 };
-const int SNAKE_SPEED{ 4 };
+const int SNAKE_SPEED{ 20 };
 
 /** Constructor: create world, snake and a render window.
  */
@@ -92,9 +92,10 @@ void GamePlayState::initializeStatusBar()
 
 void GamePlayState::updateStatusBar()
 {
-  std::ostringstream oss;
-  oss << "Lives: " << snake_.lives() << "  Body: " << std::setw(3) << snake_.body().size()
-      << "  Speed: " << std::setw(2) << snake_.speed() << "  Apples: " << std::setw(3)
-      << world_.numberOfApplesCreated() - 1 << "           Pause [SPACE]  Main Menu [ESC]";
-  statusBar_.setString(oss.str().c_str());
+    std::ostringstream oss;
+    /*score += snake_.body().size() * (world_.numberOfApplesCreated() - 1);*/
+    oss << "Lives: " << snake_.lives() << "  Body: " << std::setw(3) << snake_.body().size()
+        << "  Speed: " << std::setw(2) << snake_.speed() << "  Score: " << std::setw(3)
+        << world_.score() << "           Pause [SPACE]  Main Menu [ESC]";
+    statusBar_.setString(oss.str().c_str());
 }

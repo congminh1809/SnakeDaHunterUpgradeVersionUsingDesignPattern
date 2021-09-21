@@ -18,11 +18,12 @@ MainMenuTextBox::MainMenuTextBox(sf::RenderWindow& window)
 
 void MainMenuTextBox::initializeBackdrop()
 {
-  backdrop_.setFillColor(sf::Color{ 0, 0, 255, 80 });
-  backdrop_.setOutlineColor(sf::Color::Blue);
+  backdrop_.setFillColor(sf::Color{ 0, 0, 255, 50 });
+  backdrop_.setOutlineColor(sf::Color::Cyan);
   backdrop_.setOutlineThickness(5.0f);
-  backdrop_.setSize(sf::Vector2f{ window_.getSize().x - 40, window_.getSize().y - 40 });
-  backdrop_.setPosition(20, 20);
+  //backdrop_.setSize(sf::Vector2f{ window_.getSize().x - 40, window_.getSize().y - 40 });
+  backdrop_.setSize(sf::Vector2f{ 40, 40 });
+  backdrop_.setPosition(300, 300);
 }
 
 void MainMenuTextBox::intializeTitle()

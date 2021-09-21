@@ -1,6 +1,8 @@
 #include "world.h"
 #include "snake.h"
 
+#include <iostream>
+
 /** Construct a world containing walls and an apple.
  *
  * The world is a grid of segments and has 4 walls on the boundary and an apple
@@ -41,6 +43,9 @@ void World::update()
     // extend the snake's body by 1 segment
     snake_.grow();
 
+    score_ += snake_.body().size() * (nApplesCreated_);
+    std::cout << "SCORE:   " << score_ << std::endl;
+
     // create another apple
     createApple();
 
@@ -57,8 +62,11 @@ void World::update()
 
 void World::initializeApple()
 {
-  apple_.shape.setFillColor(sf::Color{ 150, 0, 0 });
-  apple_.shape.setRadius(segmentSize_ / 2.0);
+    texture_.loadFromFile("D:/DwnlData/apple1.png");
+    apple_.shape.setScale((float)segmentSize_ / texture_.getSize().y, (float)segmentSize_ / texture_.getSize().y);
+    texture_.setSmooth(true);
+    texture_.setRepeated(true);
+    apple_.shape.setTexture(texture_);
 
   createApple();
 }
@@ -95,6 +103,7 @@ void World::createApple()
 
   apple_.shape.setPosition(pos.x * segmentSize_, pos.y * segmentSize_);
   apple_.position = pos;
+  std::cout << "Horizontal: " << pos.x * segmentSize_ << " " << "Vertical: " << pos.y * segmentSize_ << std::endl;
 
   ++nApplesCreated_;
 }
@@ -102,7 +111,7 @@ void World::createApple()
 void World::initializeWalls()
 {
   for ( int i = 0; i < 4; ++i ) {
-    walls_[i].setFillColor(sf::Color{ 150, 0, 0 });
+    walls_[i].setFillColor(sf::Color(255, 0, 98, 255));
     if ( (i + 1) % 2 == 0 ) {
       walls_[i].setSize(sf::Vector2f(worldSize_.x * segmentSize_, segmentSize_));
     } else {
@@ -116,4 +125,11 @@ void World::initializeWalls()
       walls_[i].setPosition(sf::Vector2f(worldSize_.x * segmentSize_, worldSize_.y * segmentSize_));
     }
   }
+}
+
+
+int World::score()
+{
+    //std::cout << "SCORE:   " << score_ << std::endl;
+    return score_;
 }

@@ -6,12 +6,12 @@
 
 #include <stdexcept>
 
-const int SEGMENT_SIZE{ 20 };
+const int SEGMENT_SIZE{ 30 };
 const int SEGMENTS_X{ 40 };
-const int SEGMENTS_Y{ 30 };
+const int SEGMENTS_Y{ 40 };
 
-const std::string WINDOW_TITLE{ "Yet Another Snake Game" };
-const int MAX_FPS{ 60 };
+const std::string WINDOW_TITLE{ "Snake Da Hunter" };
+const int MAX_FPS{ 120 };
 
 Game::Game()
   : segmentSize_{ SEGMENT_SIZE }

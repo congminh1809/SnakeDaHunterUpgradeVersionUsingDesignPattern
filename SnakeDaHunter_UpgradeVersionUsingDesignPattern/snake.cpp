@@ -65,13 +65,20 @@ void Snake::grow()
 void Snake::initialize()
 {
   body_.clear();
-  // body_.emplace_back(5, 14);
-  // body_.emplace_back(5, 13);
-  // body_.emplace_back(5, 12);
-  // body_.emplace_back(5, 11);
-  // body_.emplace_back(5, 10);
-  // body_.emplace_back(5, 9);
-  // body_.emplace_back(5, 8);
+  body_.emplace_back(5, 21);
+  body_.emplace_back(5, 20);
+  body_.emplace_back(5, 19);
+  body_.emplace_back(5, 18);
+  body_.emplace_back(5, 17);
+  body_.emplace_back(5, 16);
+  body_.emplace_back(5, 15);
+  body_.emplace_back(5, 14);
+  body_.emplace_back(5, 13);
+  body_.emplace_back(5, 12);
+  body_.emplace_back(5, 11);
+  body_.emplace_back(5, 10);
+  body_.emplace_back(5, 9);
+  body_.emplace_back(5, 8);
   body_.emplace_back(5, 7);
   body_.emplace_back(5, 6);
   body_.emplace_back(5, 5);
