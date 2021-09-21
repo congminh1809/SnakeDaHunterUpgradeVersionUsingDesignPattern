@@ -10,17 +10,17 @@ ScreenTextBox::ScreenTextBox(sf::RenderWindow& window,
   initializeBackdrop();
 
   initializeTitle();
-  centerText(titleText_, 260);
+  centerText(titleText_, 460);
 
   // Center the text
   initializeMessage();
-  centerText(messageText_, 340);
+  centerText(messageText_, 640);
 }
 
 void ScreenTextBox::initializeBackdrop()
 {
   backdrop_.setFillColor(sf::Color{ 0, 0, 255, 0 });
-  backdrop_.setOutlineColor(sf::Color::Blue);
+  backdrop_.setOutlineColor(sf::Color::White);
   backdrop_.setSize(sf::Vector2f{ window_.getSize() });
   backdrop_.setPosition(0, 0);
 }
@@ -30,8 +30,8 @@ void ScreenTextBox::initializeTitle()
   titleFont_.loadFromFile("C:/Windows/Fonts/consolab.ttf");
 
   titleText_.setFont(titleFont_);
-  titleText_.setCharacterSize(60);
-  titleText_.setFillColor(sf::Color{ 160, 0, 0 });
+  titleText_.setCharacterSize(100);
+  titleText_.setFillColor(sf::Color(255, 0, 98, 255));
   titleText_.setString(title_);
 }
 
@@ -40,8 +40,8 @@ void ScreenTextBox::initializeMessage()
   messageFont_.loadFromFile("C:/Windows/Fonts/consola.ttf");
 
   messageText_.setFont(messageFont_);
-  messageText_.setCharacterSize(30);
-  messageText_.setFillColor(sf::Color::White);
+  messageText_.setCharacterSize(50);
+  messageText_.setFillColor(sf::Color(0, 255, 170, 255));
   messageText_.setString(message_);
 }
 

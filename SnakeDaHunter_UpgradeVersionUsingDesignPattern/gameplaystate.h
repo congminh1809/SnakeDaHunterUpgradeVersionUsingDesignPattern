@@ -20,9 +20,12 @@ private:
   Snake snake_;
   World world_;
 
+
   sf::Text statusBar_;
   sf::Font font_;
+  sf::Text title_;
 
   void initializeStatusBar();
   void updateStatusBar();
+  
 };
