@@ -4,14 +4,16 @@ Snake Da Hunter Game using SFML
 
 "Snake Da Hunter" game, an upgraded version of the famous game Snake game.
 In this Project, I have developed all part of the game, include logic part, design part and menu part using C++ programming language, SFML and Visual Studio IDE
-Project Knowledge: Advance C++ Programming; Object Oriented Programming (OOP); Simple and Fast Multimedia Library (SFML); Design Pattern
+
+
+# Project Knowledge: Advance C++ Programming; Object Oriented Programming (OOP); Simple and Fast Multimedia Library (SFML); Design Pattern
 
 Game Layout
 <p align="center">
    <img width="800" height="850" src="https://github.com/congminh1809/SnakeDaHunter_UpgradeVersionUsingDesignPattern/blob/master/SFML-2.5.1/Demo.gif">
 </p>
 
-Game Logic Execution:
+# Game Logic Execution:
 
 i. Part 1
 
@@ -54,3 +56,11 @@ Write code to update the state of the game.
    + Check if the snake is touching the wall. If it touches the wall, the snake will die.
 - Modify the Game::update() function to:
    + Check if the snake is alive or dead. If the snake dies, print the command line "Game Over" and exit the program.
+# PlantUML State Diagram:
+<p align="center">
+   <img width="800" height="850" src="https://github.com/congminh1809/SnakeDaHunter_UpgradeVersionUsingDesignPattern/blob/master/SFML-2.5.1/68747470733a2f2f7777772e706c616e74746578742e636f6d2f6170692f706c616e74756d6c2f696d672f544c44545179386d353774466878572d324f46327a62684f6942326543416754544f43585647587.png">
+</p>
+# PlantUML Class Diagram:
+<p align="center">
+   <img width="800" height="850" src="https://github.com/congminh1809/SnakeDaHunter_UpgradeVersionUsingDesignPattern/blob/master/SFML-2.5.1/68747470733a2f2f7777772e706c616e74746578742e636f6d2f6170692f706c616e74756d6c2f696d672f6a5046314a69436d3338526c554766424e35515755753839524f3839384a3473434f5234515.png">
+</p>
