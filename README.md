@@ -43,14 +43,14 @@ ii. Part 2
 iii. Part 3
 
 Write code to update the state of the game.
--Add the following properties to Snake:
+- Add the following properties to Snake:
    + int lives_: stores the number of times the snake is allowed to touch its body. The value for it is set at the constructor (e.g. value could be 3)
    + bool isDead_ : determines whether the snake is alive or dead. The snake will die when its lives_ = 0 or when it hits a wall.
    + Add getter/setter for isDead_ attribute
--Modify the Snake::update() function to:
+- Modify the Snake::update() function to:
    + Check if the snake is touching its body or not. If it touches its body, the segment from where it was touched to its tail will be cut off and lives_ reduced by 1 - If lives_ == 0 then the snake will die.
--Modify the World::update() function to:
+- Modify the World::update() function to:
    + Check if the snake can eat the apple. If possible, increase the length of the snake by 1 cell and create a new apple.
    + Check if the snake is touching the wall. If it touches the wall, the snake will die.
--Modify the Game::update() function to:
+- Modify the Game::update() function to:
    + Check if the snake is alive or dead. If the snake dies, print the command line "Game Over" and exit the program.
