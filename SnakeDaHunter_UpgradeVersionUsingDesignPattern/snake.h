@@ -25,7 +25,7 @@ enum class Direction
 class Snake
 {
 public:
-  Snake(const int segmentSize, const int lives, const int speed);
+  Snake(const int segmentSize, const int lives, const double speed);
 
   void draw(sf::RenderWindow&);
   void update();
@@ -49,7 +49,7 @@ private:
   sf::RectangleShape bodySegment_;  // shape used in rendering
   Direction dir_;
 
-  int speed_;    // speed of updates
+  double speed_;    // speed of updates
   int lives_;    // hold lives of snake
   bool isDead_;  // check if snake is alive
 

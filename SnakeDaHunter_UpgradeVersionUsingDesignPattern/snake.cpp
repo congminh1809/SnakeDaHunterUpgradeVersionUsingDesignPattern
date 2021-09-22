@@ -1,6 +1,6 @@
 #include "snake.h"
 
-Snake::Snake(const int segmentSize, const int lives, const int speed)
+Snake::Snake(const int segmentSize, const int lives, const double speed)
   : segmentSize_{ segmentSize }
   , speed_{ speed }
   , lives_{ lives }

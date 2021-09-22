@@ -24,7 +24,7 @@ public:
   virtual void update() = 0;
   virtual void draw() = 0;
 
-  virtual int speed() const { return 30; }
+  virtual int speed() const { return 120; }
 
 protected:
   Game* game_;
