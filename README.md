@@ -60,6 +60,7 @@ Write code to update the state of the game.
 <p align="center">
    <img width="500" height="800" src="https://github.com/congminh1809/SnakeDaHunter_UpgradeVersionUsingDesignPattern/blob/master/SFML-2.5.1/68747470733a2f2f7777772e706c616e74746578742e636f6d2f6170692f706c616e74756d6c2f696d672f544c44545179386d353774466878572d324f46327a62684f6942326543416754544f43585647587.png">
 </p>
+
 # PlantUML Class Diagram:
 <p align="center">
    <img width="800" height="500" src="https://github.com/congminh1809/SnakeDaHunter_UpgradeVersionUsingDesignPattern/blob/master/SFML-2.5.1/68747470733a2f2f7777772e706c616e74746578742e636f6d2f6170692f706c616e74756d6c2f696d672f6a5046314a69436d3338526c554766424e35515755753839524f3839384a3473434f5234515.png">
