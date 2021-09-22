@@ -2,6 +2,7 @@
 
 #include "gamestate.h"
 #include "snake.h"
+#include <SFML/Graphics.hpp>
 #include "world.h"
 
 class GamePlayState : public GameState
@@ -20,6 +21,7 @@ private:
   Snake snake_;
   World world_;
 
+  //sf::RenderWindow& window_;
 
   sf::Text statusBar_;
   sf::Font font_;
@@ -27,5 +29,5 @@ private:
 
   void initializeStatusBar();
   void updateStatusBar();
-  
+  void centerText(sf::Text&, const float);
 };

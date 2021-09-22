@@ -10,11 +10,13 @@ const int SNAKE_SPEED{ 20 };
 
 /** Constructor: create world, snake and a render window.
  */
-GamePlayState::GamePlayState(Game* g)
+GamePlayState::GamePlayState(Game* g/*, sf::RenderWindow& window*/)
 	: GameState{ g }
+	//, window_{ window }
 	, segmentSize_{ game_->segmentSize() }
 	, snake_(segmentSize_, SNAKE_LIVES, SNAKE_SPEED)
 	, world_(segmentSize_, game_->gridSize(), snake_)
+
 
 {
 	initializeStatusBar();
@@ -100,10 +102,11 @@ void GamePlayState::initializeStatusBar()
 
 	title_.setFont(font_);
 	title_.setString("Snake Da Hunter by Minh PC ");
-	title_.setCharacterSize(segmentSize_ - 6);
+	title_.setCharacterSize(segmentSize_ - 0);
 	title_.setFillColor(sf::Color(0, 255, 170, 255));
 	title_.setPosition(0, 0);
 	title_.setStyle(sf::Text::Bold);
+	centerText(title_, 15);
 }
 
 void GamePlayState::updateStatusBar()
@@ -116,4 +119,15 @@ void GamePlayState::updateStatusBar()
 	statusBar_.setString(oss.str().c_str());
 }
 
+void GamePlayState::centerText(sf::Text& text, const float y)
+{
+	auto bounds = text.getLocalBounds();
+	// std::cout << "bounds: left=" << bounds.left << ",width=" << bounds.width << ",top=" <<
+	// bounds.top
+	//           << ",height=" << bounds.height << std::endl;
+	text.setOrigin(bounds.left + bounds.width / 2.0f, bounds.top + bounds.height / 2.0f);
+	// std::cout << "text origin: x=" << text.getOrigin().x << ",y=" << text.getOrigin().y <<
+	// std::endl;
+	text.setPosition(game_->window().getSize().x / 2.0f, y);
+}
 
