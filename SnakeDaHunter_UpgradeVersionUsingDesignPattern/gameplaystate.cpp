@@ -86,7 +86,7 @@ void GamePlayState::draw()
 	game_->window().draw(title_);
 }
 
-int GamePlayState::speed() const 
+int GamePlayState::speed() const
 {
 	return snake_.speed();
 }
@@ -113,8 +113,8 @@ void GamePlayState::updateStatusBar()
 {
 	std::ostringstream oss;
 	/*score += snake_.body().size() * (world_.numberOfApplesCreated() - 1);*/
-	oss << "Lives: " << snake_.lives() << "  Body: " << std::setw(3) << snake_.body().size()
-		<< "  Speed: " << std::setw(2) << snake_.speed() << "  Score: " << std::setw(3)
+	oss << "Lives: " << snake_.lives() << " Body: " << std::setw(3) << snake_.body().size()
+		<< " Speed: " << std::setw(2) << snake_.speed() << " Score: " << std::setw(3)
 		<< world_.score() << "   Pause [SPACE]  Main Menu [ESC]";
 	statusBar_.setString(oss.str().c_str());
 }

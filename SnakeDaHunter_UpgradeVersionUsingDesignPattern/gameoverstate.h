@@ -6,12 +6,12 @@
 class GameOverState : public GameState
 {
 public:
-  GameOverState(Game* g);
+	GameOverState(Game* g);
 
-  void handleInput() override;
-  void update() override;
-  void draw() override;
+	void handleInput() override;
+	void update() override;
+	void draw() override;
 
 private:
-  ScreenTextBox textbox_;
+	ScreenTextBox textbox_;
 };

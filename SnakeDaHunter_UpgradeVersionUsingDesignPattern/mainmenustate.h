@@ -6,12 +6,12 @@
 class MainMenuState : public GameState
 {
 public:
-  MainMenuState(Game* g);
+	MainMenuState(Game* g);
 
-  void handleInput() override;
-  void update() override;
-  void draw() override;
+	void handleInput() override;
+	void update() override;
+	void draw() override;
 
 private:
-  MainMenuTextBox textbox_;
+	MainMenuTextBox textbox_;
 };

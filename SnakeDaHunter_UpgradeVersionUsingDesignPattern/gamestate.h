@@ -7,25 +7,25 @@ class Game;
 class GameState
 {
 public:
-  enum class Type
-  {
-    MENU,
-    PLAY,
-    PAUSE,
-    OVER
-  };
+	enum class Type
+	{
+		MENU,
+		PLAY,
+		PAUSE,
+		OVER
+	};
 
-  GameState(Game* g)
-    : game_{ g }
-  {}
-  virtual ~GameState() = default;
+	GameState(Game* g)
+		: game_{ g }
+	{}
+	virtual ~GameState() = default;
 
-  virtual void handleInput() = 0;
-  virtual void update() = 0;
-  virtual void draw() = 0;
+	virtual void handleInput() = 0;
+	virtual void update() = 0;
+	virtual void draw() = 0;
 
-  virtual int speed() const { return 120; }
+	virtual int speed() const { return 120; }
 
 protected:
-  Game* game_;
+	Game* game_;
 };
